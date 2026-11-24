@@ -11,7 +11,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yourdomain.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://yourdomain.com/contact"}]}</script>
 </head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="wrap nav-row"><a class="logo" href="/" aria-label="Bhoomi Brass Products home"><img src="/Bhoomi-Brass-Logo.png" alt="Bhoomi Brass Products logo" width="1486" height="431"></a><details class="nav-menu" open><summary aria-label="Toggle navigation menu">Menu</summary><nav class="nav-links" aria-label="Main navigation"><a href="/">Home</a><a href="/about">About</a><a href="/products">Products</a><a href="/contact" aria-current="page">Contact</a><a class="button" href="#enquiry">Send an enquiry</a></nav></details></div></header>
+<header class="site-header"><div class="wrap nav-row"><a class="logo" href="/" aria-label="Bhoomi Brass Products home"><img src="/Bhoomi-Brass-Logo.png" alt="Bhoomi Brass Products logo" width="1486" height="431"></a><nav class="nav-menu" aria-label="Main navigation"><button class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button><div class="nav-links" id="main-navigation"><a href="/">Home</a><a href="/about">About</a><a href="/products">Products</a><a href="/contact" aria-current="page">Contact</a><a class="button" href="#enquiry">Send an enquiry</a></div></nav></div></header>
 <main id="main">
 <section class="page-head"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Contact</nav><p class="eyebrow">Talk to our team</p><h1>Contact Bhoomi Brass Products</h1><p>Share your brass component drawing, sample or specification to discuss a B2B manufacturing enquiry.</p></div></section>
 <section class="section"><div class="wrap contact-grid">
@@ -96,4 +96,4 @@
     });
   })();
 </script>
-</body></html>
+</body><script>const menuToggle=document.querySelector(".nav-menu-toggle"),menu=document.querySelector(".nav-menu");menuToggle?.addEventListener("click",()=>{const open=menu.classList.toggle("is-open");menuToggle.setAttribute("aria-expanded",String(open))});document.addEventListener("click",event=>{if(menu&&!menu.contains(event.target)){menu.classList.remove("is-open");menuToggle?.setAttribute("aria-expanded","false")}});</script></html>

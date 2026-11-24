@@ -46,31 +46,34 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap nav-row">
   <a class="logo" href="/" aria-label="Bhoomi Brass Products home"><img src="/Bhoomi-Brass-Logo.png" alt="Bhoomi Brass Products logo" width="1486" height="431"></a>
-  <details class="nav-menu" open><summary aria-label="Toggle navigation menu">Menu</summary><nav class="nav-links" aria-label="Main navigation">
+  <nav class="nav-menu" aria-label="Main navigation">
+    <button class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+    <div class="nav-links" id="main-navigation">
     <a href="/" aria-current="page">Home</a><a href="/about">About</a><a href="/products">Products</a><a href="/contact">Contact</a><a class="button" href="/contact">Send an enquiry</a>
-  </nav></details>
+    </div>
+  </nav>
 </div></header>
 <main id="main">
   <section class="hero"><div class="wrap">
     <p class="eyebrow">Jamnagar · Gujarat · India</p>
     <h1>Brass Components Manufacturer in Jamnagar, India</h1>
-    <p>Bhoomi Brass Products makes brass inserts, pressure parts, terminals and custom brass components for B2B buyers. Send a drawing, sample or specification to discuss your manufacturing requirement.</p>
+    <p>Bhoomi Brass Products makes brass inserts, pressure parts, terminals and custom brass components for  buyers. Send a drawing, sample or specification to discuss your manufacturing requirement.</p>
     <div class="actions"><a class="button" href="/products">Explore products</a><a class="button dark" href="/contact">Request a quotation</a></div>
   </div></section>
   <section class="section"><div class="wrap split">
-    <div><p class="eyebrow">About the business</p><h2>Jamnagar brass manufacturing for business buyers</h2>
+    <div><p class="eyebrow">About the business</p><h2>Brass manufacturing Unit</h2>
       <p class="lead">We work with manufacturers, distributors and other business buyers seeking brass components. Requirements can be reviewed from a technical drawing, sample or written specification.</p>
       <p>Product-specific materials, dimensional limits, certifications and capacity are confirmed against the requirement. See our <a href="/about">about page</a> or send the details through our <a href="/contact">enquiry form</a>.</p>
       <a class="button dark" href="/about">About Bhoomi Brass Products</a>
     </div>
-    <img class="product-image" src="/insert.png" alt="Brass inserts shown as an example of Bhoomi Brass Products' product range" width="527" height="528" loading="lazy" decoding="async">
+    <img class="product-image" src="/insert.png" alt="Brass inserts shown as an example of Bhoomi Brass Products' product range" width="1254" height="1254" loading="lazy" decoding="async">
   </div></section>
   <section class="section alt"><div class="wrap">
     <p class="eyebrow">Product range</p><h2>Brass components for varied requirements</h2>
     <div class="grid product-range-grid">
       <article class="card"><h3>Brass Inserts</h3><p>Discuss inserts using your thread, dimensions, installation method, material grade and finish requirements.</p><a href="/brass-inserts">Brass inserts details</a></article>
       <article class="card"><h3>Brass Pressure Parts</h3><p>Share pressure-part drawings and service requirements so material and manufacturing details can be reviewed.</p><a href="/brass-pressure-parts">Brass pressure parts details</a></article>
-      <article class="card"><h3>Brass Terminals</h3><p>Submit terminal geometry, electrical application and connection requirements for a product enquiry.</p><a href="/brass-terminals">Brass terminals details</a></article>
+      <article class="card"><h3>Brass Terminals</h3><p>Submit terminal geometry for a product enquiry.</p><a href="/brass-terminals">Brass terminals details</a></article>
       <article class="card"><h3>Custom Brass Components</h3><p>Custom brass parts made to drawing, sample or a complete written specification.</p><a href="/custom-brass-components">Custom component details</a></article>
     </div>
   </div></section>
@@ -90,4 +93,4 @@
   <div><h2>Product pages</h2><p><a href="/brass-inserts">Brass inserts</a><br><a href="/brass-pressure-parts">Brass pressure parts</a><br><a href="/brass-terminals">Brass terminals</a><br><a href="/custom-brass-components">Custom brass components</a></p></div>
 </div><div class="copyright">© Bhoomi Brass Products. Business details marked [PLACEHOLDER] require confirmation before publication.</div></div></footer>
 <a class="button whatsapp" href="https://wa.me/919979299659" aria-label="Chat with Bhoomi Brass Products on WhatsApp">WhatsApp</a>
-</body></html>
+</body><script>const menuToggle=document.querySelector(".nav-menu-toggle"),menu=document.querySelector(".nav-menu");menuToggle?.addEventListener("click",()=>{const open=menu.classList.toggle("is-open");menuToggle.setAttribute("aria-expanded",String(open))});document.addEventListener("click",event=>{if(menu&&!menu.contains(event.target)){menu.classList.remove("is-open");menuToggle?.setAttribute("aria-expanded","false")}});</script></html>
